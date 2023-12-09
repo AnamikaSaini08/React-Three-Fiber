@@ -1,9 +1,12 @@
+import { Canvas } from "@react-three/fiber"
 import Experience from "./components/Experience"
 
 const App = () => {
   return (
     <>
-    <Experience/>
+      <Canvas>
+      <Experience/>
+      </Canvas>
     </>
   )
 }
