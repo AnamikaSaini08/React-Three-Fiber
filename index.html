@@ -1,13 +1,69 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html>
+
+<head>
+  <title>Video Animation Using GSAP ScrollTrigger</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="background-container" class="background-container">
+    <div id="video-container" class="video-container">
+      <video src="bg4.mp4" type="video/mp4" id="bgVideo"></video>
+    </div>
+  </div>
+  <div id="scroll-container" class="scroll-container">
+    <section id="step0" class="step">
+      <div>
+        <h3>Hello</h3>
+      </div>
+    </section>
+    <section class="step">
+      <div>
+        <h3>My</h3>
+      </div>
+    </section>
+    <section class="step">
+      <div>
+        <h3>Name</h3>
+      </div>
+    </section>
+    <section class="step">
+      <div>
+        <h3>Is</h3>
+      </div>
+    </section>
+    <section class="step">
+      <div>
+        <h3>Anamika</h3>
+      </div>
+    </section>
+    <section class="step">
+      <div>
+        <h3>Saini</h3>
+      </div>
+    </section>
+    <section class="step">
+      <div>
+        <h3>Thanks :)</h3>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Gsap ScrollTrigger-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+    integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="main.js" charset="utf-8"></script>
+
+</body>
+
 </html>
